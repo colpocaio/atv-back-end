@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas Importantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tarefas Importantes</h1>
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Adicione uma nova tarefa" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <div id="task-count"></div>
+    <div id="task-filters">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="pending">Não feitas</button>
+        <button class="filter-btn" data-filter="completed">Concluídas</button>
+    </div>
+    <ul id="task-list"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
